@@ -5,75 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anzil M Thajudheen Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Full-screen loader */
-    #video-loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      background: black;
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #video-loader video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Hide main content initially */
-    #main-content {
-      display: none;
-    }
-
-    /* Social Buttons Container */
-    .social-buttons {
-      margin-top: 20px;
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-    }
-
-    /* Individual button styles */
-    .social-buttons a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      background-color: #333;
-      border-radius: 50%;
-      color: white;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .social-buttons a:hover {
-      background-color: #0073b1; /* LinkedIn blue as hover default */
-    }
-
-    /* Different hover colors per platform */
-    .social-buttons a.whatsapp:hover {
-      background-color: #25D366;
-    }
-    .social-buttons a.github:hover {
-      background-color: #6cc644;
-    }
-    .social-buttons a.mail:hover {
-      background-color: #c23a2b;
-    }
-
-    /* SVG icon size */
-    .social-buttons svg {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
-    }
-  </style>
 </head>
 <body>
 
@@ -89,180 +20,194 @@
   <div id="main-content">
     <!-- Hero Section -->
     <section class="hero">
-      <div class="images">
-        <img src="anzil-photo.jpg" alt="Anzil M Thajudheen" class="img"/>
-      </div>
-      <div class="intro-text" style="text-align: center;">
-        <h1>Hello, I'm Anzil M Thajudheen</h1>
-        <p>B.Tech AI&DS | Web Developer | Designer | Learner</p>
+      <div class="hero-content">
+        <div class="images">
+          <img src="anzil-photo.jpg" alt="Anzil M Thajudheen" class="img"/>
+        </div>
+        <div class="intro-text">
+          <h1>Hello, I'm Anzil M Thajudheen</h1>
+          <p>B.Tech AI&DS | Web Developer | Designer | Learner</p>
 
-        <!-- Social Buttons -->
-        <div class="social-buttons" aria-label="Social media links">
-          <a href="www.linkedin.com/in/anzil-m-thajudheen-291749259" target="_blank" rel="noopener" aria-label="LinkedIn" class="linkedin">
-            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>LinkedIn</title>
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.039-1.852-3.039-1.853 0-2.136 1.445-2.136 2.939v5.669h-3.554v-11.5h3.413v1.569h.049c.476-.9 1.637-1.852 3.37-1.852 3.602 0 4.269 2.368 4.269 5.455v6.328zM5.337 8.433c-1.144 0-2.069-.927-2.069-2.068 0-1.144.925-2.069 2.069-2.069 1.144 0 2.068.925 2.068 2.069 0 1.141-.924 2.068-2.068 2.068zM6.804 20.452h-2.932v-11.5h2.932v11.5zM22.225 0h-20.451c-.978 0-1.774.795-1.774 1.773v20.451c0 .978.795 1.774 1.774 1.774h20.451c.978 0 1.773-.796 1.773-1.774v-20.451c0-.978-.795-1.773-1.773-1.773z"/>
-            </svg>
-          </a>
-          <a href="https://wa.me/9961143645" target="_blank" rel="noopener" aria-label="WhatsApp" class="whatsapp">
-            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>WhatsApp</title>
-              <path d="M20.52 3.48A11.805 11.805 0 0012 0C5.373 0 0 5.373 0 12a11.91 11.91 0 001.64 6.02L0 24l5.97-1.58a11.85 11.85 0 006.03 1.6c6.627 0 12-5.373 12-12 0-3.21-1.25-6.22-3.48-8.52zm-8.52 16.11a8.39 8.39 0 01-4.52-1.3l-.32-.2-3.16.83.83-3.16-.21-.33a8.4 8.4 0 112.84 3.16zm4.49-5.12c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.29.18-.54.06a6.27 6.27 0 01-1.84-1.13 6.81 6.81 0 01-1.26-1.56c-.13-.23 0-.35.1-.46.1-.1.24-.25.36-.38.12-.12.16-.2.25-.33.08-.12.04-.21-.02-.33-.06-.12-.54-1.29-.74-1.77-.2-.46-.4-.4-.54-.4-.14 0-.3-.02-.46-.02-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.59 4.13 3.63.58.25 1.03.4 1.38.51.58.18 1.11.15 1.53.09.46-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/>
-            </svg>
-          </a>
-          <a href="https://github.com/far-rider" target="_blank" rel="noopener" aria-label="GitHub" class="github">
-            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>GitHub</title>
-              <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.996.107-.776.418-1.305.762-1.605-2.665-.304-5.466-1.334-5.466-5.933 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.004 2.045.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.922.43.372.823 1.103.823 2.222 0 1.606-.015 2.9-.015 3.293 0 .32.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z"/>
-            </svg>
-          </a>
-          <a href="mailto:anzilmthajudheen@gmail.com" aria-label="Email" class="mail">
-            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>Email</title>
-              <path d="M12 12.713l-11.99-7.713h23.98l-11.99 7.713zm-12-7.334v12.621h24v-12.62l-12 7.707-12-7.708z"/>
-            </svg>
-          </a>
+          <!-- Social Buttons -->
+          <div class="social-buttons" aria-label="Social media links">
+            <a href="https://www.linkedin.com/in/anzil-m-thajudheen-291749259" target="_blank" rel="noopener" aria-label="LinkedIn" class="linkedin">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>LinkedIn</title>
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.039-1.852-3.039-1.853 0-2.136 1.445-2.136 2.939v5.669h-3.554v-11.5h3.413v1.569h.049c.476-.9 1.637-1.852 3.37-1.852 3.602 0 4.269 2.368 4.269 5.455v6.328zM5.337 8.433c-1.144 0-2.069-.927-2.069-2.068 0-1.144.925-2.069 2.069-2.069 1.144 0 2.068.925 2.068 2.069 0 1.141-.924 2.068-2.068 2.068zM6.804 20.452h-2.932v-11.5h2.932v11.5zM22.225 0h-20.451c-.978 0-1.774.795-1.774 1.773v20.451c0 .978.795 1.774 1.774 1.774h20.451c.978 0 1.773-.796 1.773-1.774v-20.451c0-.978-.795-1.773-1.773-1.773z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/9961143645" target="_blank" rel="noopener" aria-label="WhatsApp" class="whatsapp">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>WhatsApp</title>
+                <path d="M20.52 3.48A11.805 11.805 0 0012 0C5.373 0 0 5.373 0 12a11.91 11.91 0 001.64 6.02L0 24l5.97-1.58a11.85 11.85 0 006.03 1.6c6.627 0 12-5.373 12-12 0-3.21-1.25-6.22-3.48-8.52zm-8.52 16.11a8.39 8.39 0 01-4.52-1.3l-.32-.2-3.16.83.83-3.16-.21-.33a8.4 8.4 0 112.84 3.16zm4.49-5.12c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.29.18-.54.06a6.27 6.27 0 01-1.84-1.13 6.81 6.81 0 01-1.26-1.56c-.13-.23 0-.35.1-.46.1-.1.24-.25.36-.38.12-.12.16-.2.25-.33.08-.12.04-.21-.02-.33-.06-.12-.54-1.29-.74-1.77-.2-.46-.4-.4-.54-.4-.14 0-.3-.02-.46-.02-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.59 4.13 3.63.58.25 1.03.4 1.38.51.58.18 1.11.15 1.53.09.46-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/far-rider" target="_blank" rel="noopener" aria-label="GitHub" class="github">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>GitHub</title>
+                <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.996.107-.776.418-1.305.762-1.605-2.665-.304-5.466-1.334-5.466-5.933 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.004 2.045.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.922.43.372.823 1.103.823 2.222 0 1.606-.015 2.9-.015 3.293 0 .32.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="mailto:anzilmthajudheen@gmail.com" aria-label="Email" class="mail">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Email</title>
+                <path d="M12 12.713l-11.99-7.713h23.98l-11.99 7.713zm-12-7.334v12.621h24v-12.62l-12 7.707-12-7.708z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        Hai ,Everyone  I’m Anzil M Thajudheen, B.Tech Artificial Intelligence And Data Science Student Studying At Ilahia College Of Engineering And Technology.  I'm Keen In Exploring The Vast World Of AI And Passionate About Real World Data Analytics. Excellent in Interpersonal Skills And Interest In Team Management And In Communication.</p>
-      <p> Interest In Listening And Social Work Responsibilities , And  Connection Between Isolation And Socializing And Love To Combine The Creative Word Of Code!.
-      </p> <p>Free Feel To Connect Me For Anything .        
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-    
-        <!-- Project 1 -->
-        <div class="project-card">
-          <h3>The 3rd Eye </h3>
-          <div class="certificatess">
-            <h4>Mini Project On Behavior Analysis Through Cctv Feed To Prevent Potential Threats .<br> Involves Ai- Driven System Which Detects And Alert Real Time Security Threats Reduce Rely On Manual Monitoring.</h4>
-            <a href="https://github.com/far-rider/The-3rd-Eye-" target="_blank" class="certificate-box">Click Here For More Information</a>
-          </div>
+    <section class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about">
+          <p>
+            Hai Everyone! I'm Anzil M Thajudheen, B.Tech Artificial Intelligence And Data Science Student Studying At Ilahia College Of Engineering And Technology. I'm Keen In Exploring The Vast World Of AI And Passionate About Real World Data Analytics. Excellent in Interpersonal Skills And Interest In Team Management And In Communication.
+          </p>
+          <p>
+            Interest In Listening And Social Work Responsibilities, And Connection Between Isolation And Socializing And Love To Combine The Creative Word Of Code!
+          </p>
+          <p>
+            Feel Free To Connect Me For Anything.
+          </p>
         </div>
-    
-        <!-- Project 2 -->
-        <div class="project-card">
-          <h3>Text Generation With Gpt-2</h3>
-          <div class="certificatess">
-            <h4> Implemented A Text Generation Model Using Gpt-2 In Python Programming Language Enabling Coherent And Contextual Aware Text Outputs</h4>
-            <a href="https://github.com/far-rider/Text-generation-with-GPT-2" target="_blank" class="certificate-box">Click Here For More Information</a>
-          
-          </div>
-        </div>
-    
-        <!-- Project 3 -->
-        <div class="project-card">
-          <h3>Pix2pix Image Generator</h3>
-          <div class="certificatess">
-            <h4>Developed An Image-To-Image Translation Model Using Conditionals GaNs That Operates Efficiently Without Gpu Support.</h4>
-            <a href="https://github.com/far-rider/Pix2Pix-Image-to-Image-Translation-Without-GPU-" target="_blank" class="certificate-box">Click Here For More Information</a>
-          
-          </div>
-        </div>
-    
-        <!-- Project 4 -->
-        <div class="project-card">
-          <h3>Stable Diffusion Image Generator</h3>
-          <div class="certificatess">
-            <h4>Built An Ai Image Generator Using Stable Diffusion Models.<br>  Focusing In Creating High Quality And Realistic Images From Text Prompts.</h4>
-            <a href="https://github.com/far-rider/Stable-Diffusion-Image-Generator" target="_blank" class="certificate-box">Click Here For More Information</a>
-          
-          </div>
-        </div>
-        <!-- Project 5 -->
-        <div class="project-card">
-          <h3>Markov Chain Based Text Generator</h3>
-          <div class="certificatess">
-            <h4>project based on markov chain based text generation </h4>
-            <a href="https://github.com/far-rider/Markov-chain-based-Text-Generator-" target="_blank" class="certificate-box">Click Here For More Information</a>
-          
-          </div>
-        </div>
-        <!-- Project 6 -->
-        <div class="project-card">
-          <h3>Neural Style Transfer</h3>
-          <div class="certificatess">
-            <h4>Implement Neural Style Transfer(NFT) Uing Pytorch And Tre Trained VGG19 Model. <br> The Goal Is To  Apply The Artistic Style Of One Image To Another While Preserving The Context Structure.</h4>
-            <a href="https://github.com/far-rider/Stable-Diffusion-Image-Generator" target="_blank" class="certificate-box">Click Here For More Information</a>
-          
-          </div>
-        </div>
-        
       </div>
     </section>
-    
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <h3>The 3rd Eye</h3>
+            <div class="certificatess">
+              <h4>Mini Project On Behavior Analysis Through CCTV Feed To Prevent Potential Threats. Involves AI-Driven System Which Detects And Alert Real Time Security Threats Reduce Rely On Manual Monitoring.</h4>
+              <a href="https://github.com/far-rider/The-3rd-Eye-" target="_blank" class="certificate-box">Click Here For More Information</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <h3>Text Generation With GPT-2</h3>
+            <div class="certificatess">
+              <h4>Implemented A Text Generation Model Using GPT-2 In Python Programming Language Enabling Coherent And Contextual Aware Text Outputs</h4><br>
+              <a href="https://github.com/far-rider/Text-generation-with-GPT-2" target="_blank" class="certificate-box">Click Here For More Information</a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <h3>Pix2pix Image Generator</h3>
+            <div class="certificatess">
+              <h4>Developed An Image-To-Image Translation Model Using Conditionals GANs That Operates Efficiently Without GPU Support.</h4><br><br>
+              <a href="https://github.com/far-rider/Pix2Pix-Image-to-Image-Translation-Without-GPU-" target="_blank" class="certificate-box">Click Here For More Information</a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <h3>Stable Diffusion Image Generator</h3>
+            <div class="certificatess">
+              <h4>Built An AI Image Generator Using Stable Diffusion Models. Focusing In Creating High Quality And Realistic Images From Text Prompts.</h4>
+              <a href="https://github.com/far-rider/Stable-Diffusion-Image-Generator" target="_blank" class="certificate-box">Click Here For More Information</a>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
+            <h3>Markov Chain Based Text Generator</h3>
+            <div class="certificatess">
+              <h4>A Markov Based Text Gerator Uses Markov Chains To Generate New Text  By Predicting The Next Word Based On Probability Of Previous Word Sequences.</h4>
+              <a href="https://github.com/far-rider/Markov-chain-based-Text-Generator-" target="_blank" class="certificate-box">Click Here For More Information</a>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <h3>Neural Style Transfer(NST) Model</h3>
+            <div class="certificatess">
+              <h4>Implement NST Using PyTorch And Pre-Trained VGG19 Model. The Goal Is To Apply The Artistic Style Of One Image To Another While Preserving The Context.</h4>
+              <a href="https://github.com/far-rider/Neural-Style-Transfer" target="_blank" class="certificate-box">Click Here For More Information</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Certificates -->
-    <section class="certificates">
-      <h2>Certificates</h2>
-      <br>
-      <img src="IMG_20250523_200154.jpg" alt="Internship at Kochi Infopark on Python" class="certificate" />
-      <img src="IMG-20240215-WA0038.jpg" alt="Young Innovators Program Ideathon" class="certificate" />
-      <img src="IMG-20250129-WA0034.jpg" alt="Applied Artificial Intelligence Workshop" class="certificate" />
-      <img src="Screenshot (56).png" alt="Internship On Generative AI" class="certificate" />
-      <br>
-      <h3> For More Certificates Follow my LinkedIn.</h3>
+    <section class="certificates-section">
+      <div class="container">
+        <h2>Certificates</h2>
+        <div class="certificates">
+          <img src="IMG_20250523_200154.jpg" alt="Internship at Kochi Infopark on Python" class="certificate" />
+          <img src="IMG-20240215-WA0038.jpg" alt="Young Innovators Program Ideathon" class="certificate" />
+          <img src="IMG-20250129-WA0034.jpg" alt="Applied Artificial Intelligence Workshop" class="certificate" />
+          <img src="Screenshot (56).png" alt="Internship On Generative AI" class="certificate" />
+        </div>
+        <h3>For More Certificates Follow my LinkedIn.</h3>
+      </div>
     </section>
+
+    <!-- Skills -->
     <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill-card">
-          <!-- HTML Icon -->
-          <div class="skill-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="#E44D26">
-              <path d="M19 0l9 101.5 36 10 36-10 9-101.5H19zm76.2 37.3H45.4l.8 9.2h48.7l-3.7 41.7-27.2 7.5-27.1-7.5-1.9-20.7h9.2l1 11 18.8 5.1 18.8-5.1 1.3-14.3H42.8l-2.7-30.6h54.3l-.2 2.7z"/>
-            </svg>
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill-card">
+            <!-- HTML Icon -->
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="#E44D26">
+                <path d="M19 0l9 101.5 36 10 36-10 9-101.5H19zm76.2 37.3H45.4l.8 9.2h48.7l-3.7 41.7-27.2 7.5-27.1-7.5-1.9-20.7h9.2l1 11 18.8 5.1 18.8-5.1 1.3-14.3H42.8l-2.7-30.6h54.3l-.2 2.7z"/>
+              </svg>
+            </div>
+            <h3>Programming Language</h3>
+            <h4>HTML<br>CSS<br>Python</h4>
           </div>
-          <h3>Programming Language</h3>
-          <br>
-          <h4>HTML<br> Css <br> Python <br></h4>
-        </div>
-    
-        <div class="skill-card">
-          <!-- CSS Icon -->
-          <div class="skill-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="#1572B6">
-              <path d="M19 0l9 101.5 36 10 36-10 9-101.5H19zm70.4 37.5H45.4l.8 9.2h42.4l-2.7 30.6-27.2 7.5-27.1-7.5-1.4-15.5h9.3l.7 7.8 18.8 5.1 18.7-5.1 1.3-14.3H42.8l-2.6-30.5h49.2l-.2 2.7z"/>
-            </svg>
+
+          <div class="skill-card">
+            <!-- CSS Icon -->
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="#1572B6">
+                <path d="M19 0l9 101.5 36 10 36-10 9-101.5H19zm70.4 37.5H45.4l.8 9.2h42.4l-2.7 30.6-27.2 7.5-27.1-7.5-1.4-15.5h9.3l.7 7.8 18.8 5.1 18.7-5.1 1.3-14.3H42.8l-2.6-30.5h49.2l-.2 2.7z"/>
+              </svg>
+            </div>
+            <h3>Applications</h3>
+            <h4>OpenCV<br>Roboflow<br>ResNet50<br>YOLO<br>Canva</h4>
           </div>
-          <h3>Applications</h3>
-          <br>
-          <h4>OpenCv <br> Roboflow <br> ResNet50 <br> YOLO <br> Canva </h4>
-        </div>
-    
-        <div class="skill-card">
-          <!-- JavaScript Icon -->
-          <div class="skill-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="#F7DF1E">
-              <path d="M19 0v128l45.2 12.8L110.8 128V0H19zm66.5 94c1.5 9.7 6.8 13.3 13.4 13.3 6.8 0 11.3-3.3 13.9-8.2l-9.1-5.7c-1.8 3.2-3.5 4.5-6.5 4.5-3.3 0-5.4-2-6.1-6.4V65H85v29zm-28.6-.4c.7 5.2 2.7 9.1 11 9.1 4.6 0 7.9-1.7 10.3-4.6l-8.7-5.5c-1.3 1.4-2.4 2-4.3 2-2.3 0-3.7-1.1-4.2-4.4V65h-9v28.6z"/>
-            </svg>
+
+          <div class="skill-card">
+            <!-- JavaScript Icon -->
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="#F7DF1E">
+                <path d="M19 0v128l45.2 12.8L110.8 128V0H19zm66.5 94c1.5 9.7 6.8 13.3 13.4 13.3 6.8 0 11.3-3.3 13.9-8.2l-9.1-5.7c-1.8 3.2-3.5 4.5-6.5 4.5-3.3 0-5.4-2-6.1-6.4V65H85v29zm-28.6-.4c.7 5.2 2.7 9.1 11 9.1 4.6 0 7.9-1.7 10.3-4.6l-8.7-5.5c-1.3 1.4-2.4 2-4.3 2-2.3 0-3.7-1.1-4.2-4.4V65h-9v28.6z"/>
+              </svg>
+            </div>
+            <h3>Other Skills</h3>
+            <h4>Leadership Skills<br>Communication Skills</h4>
           </div>
-          <h3>Other skills</h3>
-          <br>
-          <h4>Leadership Skills <br> Communication Skills</h4>
         </div>
       </div>
     </section>
-    
+
     <!-- Contact -->
     <section class="contact">
-      <h2>Contact Me</h2>
-      <p>Email me at: <a href="mailto:anzilmthajudheen@gmail.com">anzilmthajudheen@gmail.com</a></p>
-      <a href="ANZIL M THAJUDHEEN RESUME.pdf" download class="button">Download Resume</a>
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email me at: <a href="mailto:anzilmthajudheen@gmail.com">anzilmthajudheen@gmail.com</a></p>
+        <a href="ANZIL M THAJUDHEEN RESUME.pdf" download class="button">Download Resume</a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; ANZIL M THAJUDHEEN @2025</p>
+      <div class="container">
+        <p>&copy; ANZIL M THAJUDHEEN @2025<br>All Rights Reserved</p>
+      </div>
     </footer>
   </div>
 
