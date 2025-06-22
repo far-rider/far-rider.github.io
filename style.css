@@ -1156,6 +1156,21 @@ footer {
 }
 
 @media (max-width: 768px) {
+   .intro-text {
+    text-align: center; /* Forces center alignment on mobile */
+    padding: 0 20px; /* Adds side padding */
+  }
+
+  .name, .typed-text, .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%; /* Prevents text overflow */
+  }
+
+  .social-buttons, .hero-cta {
+    justify-content: center; /* Centers buttons */
+  }
   .nav-links {
     position: fixed;
     top: 70px;
